@@ -1,0 +1,25 @@
+[workspace]
+members = [
+   'pallet-ethereum-transactions',
+   'rpc',
+   'runtime-api'
+]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+license = "GPL-3.0"
+authors = ["InvArch Association <https://github.com/InvArch>"]
+repository = "https://github.com/InvArch/borderland/"
+
+[workspace.dependencies]
+ethereum = { version = "0.14.0", default-features = false }
+ethereum-types = { version = "0.14.1", default-features = false }
+scale-codec = { package = "parity-scale-codec", version = "3.2.1", default-features = false, features = ["derive"] }
+scale-info = { version = "2.3.1", default-features = false, features = ["derive"] }
+sp-api = { version = "4.0.0-dev", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.43", default-features = false }
+sp-core = { version = "7.0.0", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.43", default-features = false }
+sp-runtime = { version = "7.0.0", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.43", default-features = false }
+sp-state-machine = { version = "0.13.0", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.43", default-features = false }
+sp-std = { version = "5.0.0", git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.43", default-features = false }
+fp-evm = { git = "https://github.com/paritytech/frontier", branch = "polkadot-v0.9.43", default-features = false }
